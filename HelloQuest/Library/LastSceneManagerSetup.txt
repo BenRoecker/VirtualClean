@@ -1,0 +1,25 @@
+sceneSetups:
+- path: Assets/Scenes/Ex1.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Oculus/SampleFramework/Usage/DistanceGrab.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Oculus/SampleFramework/Usage/Locomotion.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Ex3.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Ex4.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/PROJET.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
