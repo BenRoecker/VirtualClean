@@ -33,22 +33,22 @@ public class Trash : MonoBehaviour
         if(collision.collider.tag == "Bin")
         {
             Debug.Log("tag detected + " + garbage.ToString());
-            if(garbage == trash.can && BinManager.m_instance.color == BinManager.ColorBin.Red)
+            if(garbage == trash.can && collision.collider.GetComponent<BinManager>().color == BinManager.ColorBin.Red)
             {
                 Debug.Log("It's a can");
                 ScoreManager.m_instance.UpdateScore(5);
             }
-            else if (garbage == trash.glass && BinManager.m_instance.color == BinManager.ColorBin.Blue)
+            else if (garbage == trash.glass && collision.collider.GetComponent<BinManager>().color == BinManager.ColorBin.Blue)
             {
                 Debug.Log("It's a glass");
                 ScoreManager.m_instance.UpdateScore(5);
             }
-            else if (garbage == trash.paper && BinManager.m_instance.color == BinManager.ColorBin.Green)
+            else if (garbage == trash.paper && collision.collider.GetComponent<BinManager>().color == BinManager.ColorBin.Green)
             {
                 Debug.Log("It's a paper");
                 ScoreManager.m_instance.UpdateScore(5);
             }
-            else if (garbage == trash.plastic && BinManager.m_instance.color == BinManager.ColorBin.Yellow)
+            else if (garbage == trash.plastic && collision.collider.GetComponent<BinManager>().color == BinManager.ColorBin.Yellow)
             {
                 Debug.Log("It's a plastic"); 
                 ScoreManager.m_instance.UpdateScore(5);
@@ -57,7 +57,7 @@ public class Trash : MonoBehaviour
             {
                 ScoreManager.m_instance.UpdateScore(-10);
             }
-            TrashManager.m_instance.DestroyTrash();
+            Destroy(this.gameObject);
         }
     }
 }

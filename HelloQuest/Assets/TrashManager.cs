@@ -25,11 +25,6 @@ public class TrashManager : MonoBehaviour
     public void CreateTrash(int pos)
     {
         GameObject m_newTrash = Instantiate(m_trash);
-        m_newTrash.transform.position = new Vector3(0, pos + 3, 0);
-    }
-
-    public void DestroyTrash()
-    {
-        Destroy(Trash.m_instance.gameObject);
+        m_newTrash.transform.position = new Vector3(pos + 3, 0, 0);
     }
 }
