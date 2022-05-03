@@ -64,8 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BinManager.cs" />
-    <Compile Include="Assets\MoreCubes.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -351,10 +349,13 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPVersion.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\OculusSpatializerUnity.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\helpers\ONSPReflectionZone.cs" />
-    <Compile Include="Assets\ScoreManager.cs" />
-    <Compile Include="Assets\TimeLeft.cs" />
-    <Compile Include="Assets\Trash.cs" />
-    <Compile Include="Assets\TrashManager.cs" />
+    <Compile Include="Assets\Script\BinManager.cs" />
+    <Compile Include="Assets\Script\MoreCubes.cs" />
+    <Compile Include="Assets\Script\ScoreManager.cs" />
+    <Compile Include="Assets\Script\StartManager.cs" />
+    <Compile Include="Assets\Script\TimeLeft.cs" />
+    <Compile Include="Assets\Script\Trash.cs" />
+    <Compile Include="Assets\Script\TrashManager.cs" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_Loader.shader" />
