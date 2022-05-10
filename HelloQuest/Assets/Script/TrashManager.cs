@@ -15,6 +15,24 @@ public class TrashManager : MonoBehaviour
     public GameObject m_trashCan;
     public GameObject m_trashSodaCan;
 
+    [Header("Trash Plastic")]
+
+    public GameObject m_barrel1;
+    public GameObject m_barrel2;
+
+    [Header("Trash Paper")]
+
+    public GameObject m_boxPurple;
+    public GameObject m_boxYellow;
+    public GameObject m_book1;
+    public GameObject m_book2;
+
+    [Header("Trash Glass")]
+
+    public GameObject m_bottle1;
+    public GameObject m_bottle2;
+    public GameObject m_bottle3;
+
     public void Start()
     {
         if(m_instance == null)
