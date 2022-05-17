@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 64540050616314722}
   - component: {fileID: 54325742868169348}
   - component: {fileID: 1528558948}
-  - component: {fileID: 4725668188146628027}
   m_Layer: 0
   m_Name: can tall 2
   m_TagString: Untagged
@@ -80,23 +79,6 @@ MonoBehaviour:
   m_trash: {fileID: 1226811400629940}
   m_trashRigidbody: {fileID: 54325742868169348}
   garbage: 2
---- !u!114 &4725668188146628027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226811400629940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &1970814144761198
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +91,7 @@ GameObject:
   - component: {fileID: 33889314175504588}
   - component: {fileID: 23497953128810512}
   - component: {fileID: 64786534848613150}
+  - component: {fileID: 3174613471313210014}
   m_Layer: 0
   m_Name: can tall
   m_TagString: Untagged
@@ -191,3 +174,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300002, guid: 973f154fad163944d8a20db0588291df, type: 3}
+--- !u!114 &3174613471313210014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970814144761198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []

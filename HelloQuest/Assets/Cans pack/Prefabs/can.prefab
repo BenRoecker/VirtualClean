@@ -105,7 +105,6 @@ GameObject:
   - component: {fileID: 4037152592001108}
   - component: {fileID: 54504386569529468}
   - component: {fileID: 464824696}
-  - component: {fileID: 531117232691374753}
   m_Layer: 0
   m_Name: can
   m_TagString: Untagged
@@ -160,23 +159,6 @@ MonoBehaviour:
   m_trash: {fileID: 1700171439170184}
   m_trashRigidbody: {fileID: 54504386569529468}
   garbage: 2
---- !u!114 &531117232691374753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700171439170184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &1900405560796112
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,6 +171,7 @@ GameObject:
   - component: {fileID: 33432134700225396}
   - component: {fileID: 23736229874421702}
   - component: {fileID: 64809397119760470}
+  - component: {fileID: 6731878037320830772}
   m_Layer: 0
   m_Name: can
   m_TagString: Untagged
@@ -271,3 +254,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300002, guid: fa22f1078e1a09443ad1c501ed2af2b5, type: 3}
+--- !u!114 &6731878037320830772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900405560796112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []

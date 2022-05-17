@@ -8,30 +8,19 @@ public class TrashManager : MonoBehaviour
 
     [Header("Trash Can")]
 
-    public GameObject m_trashCan2;
-    public GameObject m_trashCanSmall;
-    public GameObject m_trashCanTall2;
-    public GameObject m_trashCanTall;
-    public GameObject m_trashCan;
-    public GameObject m_trashSodaCan;
+    public GameObject m_trashCanGroup;
 
     [Header("Trash Plastic")]
 
-    public GameObject m_barrel1;
-    public GameObject m_barrel2;
+    public GameObject m_trashPlasticGroup;
 
     [Header("Trash Paper")]
 
-    public GameObject m_boxPurple;
-    public GameObject m_boxYellow;
-    public GameObject m_book1;
-    public GameObject m_book2;
+    public GameObject m_trashPaperGroup;
 
     [Header("Trash Glass")]
 
-    public GameObject m_bottle1;
-    public GameObject m_bottle2;
-    public GameObject m_bottle3;
+    public GameObject m_trashGlassGroup;
 
     public void Start()
     {
@@ -39,17 +28,33 @@ public class TrashManager : MonoBehaviour
         {
             m_instance = this;
         }
-
-        //Creation of the trashes
-        for (int i = 0; i < 1; i++) 
-        {
-            CreateTrash(i, m_trashCan2);
-        }
     }
 
-    public void CreateTrash(int pos, GameObject trash)
+    public void EnableTrashPrefab(int rndNum)
     {
-        GameObject m_newTrash = Instantiate(trash);
-        m_newTrash.transform.position = new Vector3(pos + 3, 0, 0);
+        if(rndNum == 0)
+        {
+            Debug.Log("rndNum = 0");
+            m_trashCanGroup.SetActive(true);
+            m_trashCanGroup.GetComponent<CanTrashManager>().EnableTrashCanRandomly();
+        }
+        else if(rndNum == 1)
+        {
+            Debug.Log("rndNum = 1");
+            m_trashGlassGroup.SetActive(true);
+            m_trashGlassGroup.GetComponent<GlassTrashManager>().EnableTrashGlassRandomly();
+        }
+        else if(rndNum == 2)
+        {
+            Debug.Log("rndNum = 2");
+            m_trashPaperGroup.SetActive(true);
+            m_trashPaperGroup.GetComponent<PaperTrashManager>().EnableTrashPaperRandomly();
+        }
+        else if(rndNum == 3)
+        {
+            Debug.Log("rndNum = 3");
+            m_trashPlasticGroup.SetActive(true);
+            m_trashPlasticGroup.GetComponent<PlasticTrashManager>().EnableTrashPlasticRandomly();
+        }
     }
 }

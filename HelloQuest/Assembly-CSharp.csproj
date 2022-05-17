@@ -64,6 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CanTrashManager.cs" />
+    <Compile Include="Assets\GlassTrashManager.cs" />
+    <Compile Include="Assets\LaunchManager.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -349,6 +352,8 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPVersion.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\OculusSpatializerUnity.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\helpers\ONSPReflectionZone.cs" />
+    <Compile Include="Assets\PaperTrashManager.cs" />
+    <Compile Include="Assets\PlasticTrashManager.cs" />
     <Compile Include="Assets\Props\Barrels\PlasticBarrels\Scene\MouseOrbit_PlasticBarrels.cs" />
     <Compile Include="Assets\Script\BinManager.cs" />
     <Compile Include="Assets\Script\MoreCubes.cs" />
