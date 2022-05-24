@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4415048940457068461}
   - component: {fileID: 5294351685984942060}
   - component: {fileID: 5868332177308033386}
+  - component: {fileID: 2468302441838772724}
   m_Layer: 0
   m_Name: Box_01_Yellow
   m_TagString: Untagged
@@ -127,7 +128,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &5868332177308033386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,3 +146,16 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!65 &2468302441838772724
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4080044, y: 0.43248463, z: 0.5875264}
+  m_Center: {x: -0.0015219003, y: 0.048222102, z: 0}

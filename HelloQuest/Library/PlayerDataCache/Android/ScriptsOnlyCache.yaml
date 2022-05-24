@@ -45,6 +45,7 @@ ScriptsOnlyBuild:
     - OVRCameraRig
     - OVRDebugInfo
     - OVRGrabbable
+    - OVRGrabber
     - OVRManager
     - OVRPlayerController
     - OVRRaycaster
@@ -174,6 +175,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13390}
     - Class: 114
+      Script: {instanceID: 13522}
+    - Class: 114
       Script: {instanceID: 13586}
     - Class: 114
       Script: {instanceID: 13750}
@@ -194,6 +197,10 @@ ScriptsOnlyBuild:
     - Class: 120
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}

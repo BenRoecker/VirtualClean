@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5185069638717271288}
   - component: {fileID: 1497895709103099905}
   - component: {fileID: 5652208376050216495}
-  - component: {fileID: 4400376242241022945}
   - component: {fileID: 5825037783753627031}
+  - component: {fileID: 7507165091701265351}
   m_Layer: 0
   m_Name: TrashbinGreen
   m_TagString: Bin
@@ -98,7 +98,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.64300585, y: 1.173587, z: 0.7297379}
   m_Center: {x: 0.00000017881393, y: 0.58679336, z: -0.042004004}
---- !u!54 &4400376242241022945
+--- !u!114 &5825037783753627031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933738511553406173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9bcce9da9b0af04c93abc82455b41ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_destroyer: {fileID: 933738511553406173}
+  color: 1
+--- !u!54 &7507165091701265351
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,21 +127,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &5825037783753627031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933738511553406173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9bcce9da9b0af04c93abc82455b41ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_destroyer: {fileID: 1662808688167496897}
-  color: 1
+  m_CollisionDetection: 1
 --- !u!1 &1662808688167496897
 GameObject:
   m_ObjectHideFlags: 0

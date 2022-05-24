@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3770709614767856542}
   - component: {fileID: 20181776645703149}
   - component: {fileID: 8859576188808168673}
+  - component: {fileID: 1972359077235433546}
   m_Layer: 0
   m_Name: PlasticlBarrels_p1
   m_TagString: Untagged
@@ -97,7 +98,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!64 &20181776645703149
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -129,6 +130,20 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!136 &1972359077235433546
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739547710697444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.29380953
+  m_Height: 1.1055983
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.55064803, z: 0}
 --- !u!1 &1905329509161496
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +170,7 @@ Transform:
   m_GameObject: {fileID: 1905329509161496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4714920457444774}
   m_Father: {fileID: 0}
