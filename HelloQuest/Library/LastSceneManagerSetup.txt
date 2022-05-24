@@ -1,6 +1,6 @@
 sceneSetups:
 - path: Assets/Scenes/Ex1.unity
-  isLoaded: 0
+  isLoaded: 1
   isActive: 0
   isSubScene: 0
 - path: Assets/Oculus/SampleFramework/Usage/DistanceGrab.unity
@@ -24,6 +24,10 @@ sceneSetups:
   isActive: 1
   isSubScene: 0
 - path: Assets/Scenes/START.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Ex2.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0

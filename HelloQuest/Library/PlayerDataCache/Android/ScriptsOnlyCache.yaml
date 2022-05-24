@@ -2,8 +2,14 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BinManager
+    - CanTrashManager
+    - ChangeAlpha
     - CharacterCameraConstraint
     - CharacterCapsule
+    - GlassTrashManager
+    - HandedInputSelector
+    - LaserPointer
+    - LaunchManager
     - LocomotionController
     - LocomotionTeleport
     - ONSPSettings
@@ -11,6 +17,8 @@ ScriptsOnlyBuild:
     - OvrAvatar
     - OvrAvatarLocalDriver
     - OvrAvatarSettings
+    - PaperTrashManager
+    - PlasticTrashManager
     - ScoreManager
     - StartManager
     - TeleportAimHandlerLaser
@@ -39,8 +47,10 @@ ScriptsOnlyBuild:
     - OVRGrabbable
     - OVRManager
     - OVRPlayerController
+    - OVRRaycaster
     - OVRSceneSampleController
     - OVRScreenFade
+    - UnityEngine.EventSystems.OVRInputModule
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -87,96 +97,98 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 109
+    - Class: 111
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11280}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11358}
     - Class: 114
-      Script: {instanceID: 11494}
+      Script: {instanceID: 11404}
     - Class: 114
-      Script: {instanceID: 11516}
+      Script: {instanceID: 11498}
     - Class: 114
-      Script: {instanceID: 11572}
+      Script: {instanceID: 11520}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11576}
     - Class: 114
-      Script: {instanceID: 11708}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 11786}
+      Script: {instanceID: 11712}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 11816}
+      Script: {instanceID: 11818}
     - Class: 114
-      Script: {instanceID: 11858}
+      Script: {instanceID: 11820}
     - Class: 114
-      Script: {instanceID: 12022}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 12064}
+      Script: {instanceID: 12124}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 12130}
+      Script: {instanceID: 12268}
     - Class: 114
-      Script: {instanceID: 12264}
+      Script: {instanceID: 12286}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 12364}
     - Class: 114
-      Script: {instanceID: 12360}
+      Script: {instanceID: 12372}
     - Class: 114
-      Script: {instanceID: 12390}
+      Script: {instanceID: 12396}
     - Class: 114
-      Script: {instanceID: 12500}
+      Script: {instanceID: 12506}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12564}
     - Class: 114
-      Script: {instanceID: 12656}
+      Script: {instanceID: 12662}
     - Class: 114
-      Script: {instanceID: 12670}
+      Script: {instanceID: 12676}
     - Class: 114
-      Script: {instanceID: 12714}
+      Script: {instanceID: 12720}
     - Class: 114
-      Script: {instanceID: 12718}
+      Script: {instanceID: 12724}
     - Class: 114
-      Script: {instanceID: 12734}
+      Script: {instanceID: 12740}
     - Class: 114
-      Script: {instanceID: 12828}
+      Script: {instanceID: 12836}
     - Class: 114
-      Script: {instanceID: 12852}
+      Script: {instanceID: 12860}
     - Class: 114
-      Script: {instanceID: 12946}
+      Script: {instanceID: 12966}
     - Class: 114
-      Script: {instanceID: 12958}
+      Script: {instanceID: 12984}
     - Class: 114
-      Script: {instanceID: 12976}
+      Script: {instanceID: 13002}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 13018}
     - Class: 114
-      Script: {instanceID: 13040}
+      Script: {instanceID: 13050}
     - Class: 114
-      Script: {instanceID: 13150}
+      Script: {instanceID: 13160}
     - Class: 114
-      Script: {instanceID: 13194}
+      Script: {instanceID: 13162}
     - Class: 114
-      Script: {instanceID: 13378}
+      Script: {instanceID: 13206}
     - Class: 114
-      Script: {instanceID: 13422}
+      Script: {instanceID: 13390}
     - Class: 114
-      Script: {instanceID: 13574}
+      Script: {instanceID: 13586}
     - Class: 114
-      Script: {instanceID: 13738}
+      Script: {instanceID: 13750}
     - Class: 114
-      Script: {instanceID: 13790}
+      Script: {instanceID: 13802}
     - Class: 114
-      Script: {instanceID: 13868}
+      Script: {instanceID: 13880}
     - Class: 114
-      Script: {instanceID: 13872}
+      Script: {instanceID: 13884}
     - Class: 114
-      Script: {instanceID: 13930}
+      Script: {instanceID: 13890}
     - Class: 114
-      Script: {instanceID: 13946}
+      Script: {instanceID: 13944}
+    - Class: 114
+      Script: {instanceID: 13960}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -220,78 +232,104 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11280}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11358}
     - Class: 114
-      Script: {instanceID: 11494}
+      Script: {instanceID: 11498}
     - Class: 114
-      Script: {instanceID: 11516}
+      Script: {instanceID: 11520}
     - Class: 114
-      Script: {instanceID: 11572}
+      Script: {instanceID: 11576}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 11652}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 11708}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11786}
+      Script: {instanceID: 11712}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 11816}
+      Script: {instanceID: 11818}
     - Class: 114
-      Script: {instanceID: 11858}
+      Script: {instanceID: 11820}
     - Class: 114
-      Script: {instanceID: 12130}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 12264}
+      Script: {instanceID: 12026}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 12068}
     - Class: 114
-      Script: {instanceID: 12360}
+      Script: {instanceID: 12124}
     - Class: 114
-      Script: {instanceID: 12390}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 12500}
+      Script: {instanceID: 12268}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12286}
     - Class: 114
-      Script: {instanceID: 12670}
+      Script: {instanceID: 12364}
     - Class: 114
-      Script: {instanceID: 12714}
+      Script: {instanceID: 12396}
     - Class: 114
-      Script: {instanceID: 12718}
+      Script: {instanceID: 12506}
     - Class: 114
-      Script: {instanceID: 12734}
+      Script: {instanceID: 12564}
     - Class: 114
-      Script: {instanceID: 12828}
+      Script: {instanceID: 12676}
     - Class: 114
-      Script: {instanceID: 12852}
+      Script: {instanceID: 12720}
     - Class: 114
-      Script: {instanceID: 12958}
+      Script: {instanceID: 12724}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 12740}
     - Class: 114
-      Script: {instanceID: 13040}
+      Script: {instanceID: 12786}
     - Class: 114
-      Script: {instanceID: 13150}
+      Script: {instanceID: 12836}
     - Class: 114
-      Script: {instanceID: 13378}
+      Script: {instanceID: 12840}
     - Class: 114
-      Script: {instanceID: 13738}
+      Script: {instanceID: 12860}
     - Class: 114
-      Script: {instanceID: 13790}
+      Script: {instanceID: 12954}
     - Class: 114
-      Script: {instanceID: 13868}
+      Script: {instanceID: 12966}
+    - Class: 114
+      Script: {instanceID: 13002}
+    - Class: 114
+      Script: {instanceID: 13050}
+    - Class: 114
+      Script: {instanceID: 13162}
+    - Class: 114
+      Script: {instanceID: 13390}
+    - Class: 114
+      Script: {instanceID: 13434}
+    - Class: 114
+      Script: {instanceID: 13504}
+    - Class: 114
+      Script: {instanceID: 13750}
+    - Class: 114
+      Script: {instanceID: 13758}
+    - Class: 114
+      Script: {instanceID: 13802}
+    - Class: 114
+      Script: {instanceID: 13880}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -331,6 +369,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SocialPlatformManager
+  - hash:
+      serializedVersion: 2
+      Hash: e1d1c0270b41dd02dd52771e78a23b80
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseOrbit_PlasticBarrels
   - hash:
       serializedVersion: 2
       Hash: 3c08375166df118bd1801438fc36b92f
@@ -373,6 +417,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OculusSpatializerUnity
+  - hash:
+      serializedVersion: 2
+      Hash: 476c9982f6d0560b049db21c94cb0981
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlasticTrashManager
   - hash:
       serializedVersion: 2
       Hash: e4c511fcf31a39b6e614595be7309046
@@ -897,6 +947,12 @@ ScriptsOnlyBuild:
     className: TeleportOrientationHandlerHMD
   - hash:
       serializedVersion: 2
+      Hash: 826017e7d489a7e8431db707a1ae71e7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LaunchManager
+  - hash:
+      serializedVersion: 2
       Hash: 432d62ed2883551ba8bc9b7e784ecf84
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1143,6 +1199,12 @@ ScriptsOnlyBuild:
     className: OVRModeParms
   - hash:
       serializedVersion: 2
+      Hash: fb89541a61410de1e5012a136873540a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChangeAlpha
+  - hash:
+      serializedVersion: 2
       Hash: b5d01a44c9a694c6b9bce4626dd0a12e
     assemblyName: Oculus.VR.dll
     namespaceName: 
@@ -1257,7 +1319,7 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
-      Hash: 9be4ac14ca349f4ddd2b0e9f6012121a
+      Hash: 1c154f6de2d615125e7e16609c26b5e4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TrashManager
@@ -1285,6 +1347,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OvrAvatarRemoteDriver
+  - hash:
+      serializedVersion: 2
+      Hash: 6382a5c05422c7948805f98699ea14af
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PaperTrashManager
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -1363,6 +1431,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Oculus.Platform.Samples.VrHoops
     className: PlayerArea
+  - hash:
+      serializedVersion: 2
+      Hash: d1444897c3cb0e696ef02079b627bd76
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GlassTrashManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1635,6 +1709,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: 74e3601784672b35b9b73a48165de653
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CanTrashManager
+  - hash:
+      serializedVersion: 2
       Hash: aa88ae22474df55295327e4ee99e5a24
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1701,6 +1781,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/PROJET.unity
   - Assets/Scenes/START.unity
+  - Assets/Scenes/PROJET.unity
   playerPath: C:/Users/josse/Documents/ECOLE/IRVS8/InteractionH-M/HelloQuest/HelloQuest/Build/Build.apk

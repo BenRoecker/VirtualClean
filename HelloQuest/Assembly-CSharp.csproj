@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CanTrashManager.cs" />
+    <Compile Include="Assets\ChangeAlpha.cs" />
     <Compile Include="Assets\GlassTrashManager.cs" />
     <Compile Include="Assets\LaunchManager.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />

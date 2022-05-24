@@ -24,11 +24,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Ex4.unity
     guid: 1124273a6ebf33241a70beecb45dfa60
   - enabled: 1
-    path: Assets/Scenes/PROJET.unity
-    guid: 8b0dde66e9f99ae4692be1244a9ce6fa
-  - enabled: 1
     path: Assets/Scenes/START.unity
     guid: e2dbad3487f08a34bbea251939995df6
+  - enabled: 1
+    path: Assets/Scenes/PROJET.unity
+    guid: 8b0dde66e9f99ae4692be1244a9ce6fa
   - enabled: 0
     path: Assets/Simple city plain/scene/Demo Scene.unity
     guid: 79f8bac4c75da6e43bd8288f7d84106c
