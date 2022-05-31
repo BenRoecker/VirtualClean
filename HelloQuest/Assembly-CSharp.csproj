@@ -355,7 +355,6 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\helpers\ONSPReflectionZone.cs" />
     <Compile Include="Assets\PaperTrashManager.cs" />
     <Compile Include="Assets\PlasticTrashManager.cs" />
-    <Compile Include="Assets\Props\Barrels\PlasticBarrels\Scene\MouseOrbit_PlasticBarrels.cs" />
     <Compile Include="Assets\Script\BinManager.cs" />
     <Compile Include="Assets\Script\MoreCubes.cs" />
     <Compile Include="Assets\Script\ScoreManager.cs" />

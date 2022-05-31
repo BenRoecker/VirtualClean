@@ -188,6 +188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d75448af1cb34aa428d2edf2d664a436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_trash: {fileID: 1739547710697444}
+  m_trash: {fileID: 1905329509161496}
   m_trashRigidbody: {fileID: 3770709614767856542}
   garbage: 0
