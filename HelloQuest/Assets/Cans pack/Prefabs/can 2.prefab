@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4296462309468258}
-  - component: {fileID: 64369774751847320}
   - component: {fileID: 54368155591982924}
   - component: {fileID: 1363965477}
   - component: {fileID: 1363965478}
@@ -36,20 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &64369774751847320
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167601463275944}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
 --- !u!54 &54368155591982924
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -81,6 +66,7 @@ MonoBehaviour:
   m_trash: {fileID: 1167601463275944}
   m_trashRigidbody: {fileID: 54368155591982924}
   garbage: 2
+  m_sound: {fileID: 0}
 --- !u!114 &1363965478
 MonoBehaviour:
   m_ObjectHideFlags: 0

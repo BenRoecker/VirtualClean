@@ -146,6 +146,7 @@ MonoBehaviour:
   m_trash: {fileID: 805171564998822402}
   m_trashRigidbody: {fileID: 7815586998138351022}
   garbage: 0
+  m_sound: {fileID: 0}
 --- !u!65 &196293005735324021
 BoxCollider:
   m_ObjectHideFlags: 0

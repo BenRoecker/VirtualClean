@@ -12,6 +12,8 @@ public class Trash : MonoBehaviour
 
     public trash garbage = trash.can;
 
+    public AudioSource m_sound;
+
     public enum trash
     {
         plastic,
@@ -57,6 +59,7 @@ public class Trash : MonoBehaviour
             {
                 ScoreManager.m_instance.UpdateScore(-10);
             }
+            m_sound.Play();
             Destroy(this.gameObject);
         }
     }
