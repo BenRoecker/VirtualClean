@@ -20,12 +20,12 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/PROJET.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
-- path: Assets/Scenes/START.unity
   isLoaded: 0
   isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/START.unity
+  isLoaded: 1
+  isActive: 1
   isSubScene: 0
 - path: Assets/Scenes/Ex2.unity
   isLoaded: 0

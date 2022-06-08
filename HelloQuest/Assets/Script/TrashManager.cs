@@ -24,7 +24,7 @@ public class TrashManager : MonoBehaviour
 
     public void Start()
     {
-        if(m_instance == null)
+        if (m_instance == null)
         {
             m_instance = this;
         }

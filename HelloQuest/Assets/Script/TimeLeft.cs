@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimeLeft : MonoBehaviour
 {
@@ -16,11 +17,19 @@ public class TimeLeft : MonoBehaviour
 
     public Text m_scoreText;
 
+    public string m_nameScene;
+
     private int m_timeLeft;
 
     public void Start()
     {
-        m_timeLeft = m_timeExperience;
+        m_timeLeft = PlayerPrefs.GetInt("Timer");
+
+        m_timeExperience = PlayerPrefs.GetInt("Timer");
+
+        //m_timeLeft = m_timeExperience;
+
+        StartPlay();
     }
 
     public void StartPlay()
@@ -28,8 +37,6 @@ public class TimeLeft : MonoBehaviour
         StartCoroutine(StartExperience());
 
         StartCoroutine(TimerLive());
-
-        m_buttonStart.SetActive(false);
     }
 
     IEnumerator StartExperience()
@@ -38,7 +45,8 @@ public class TimeLeft : MonoBehaviour
         ScoreManager.m_instance.UpdateScore(0);
         yield return new WaitForSeconds(m_timeExperience);
         m_finalScore.SetActive(true);
-        m_scoreText.text = ScoreManager.m_instance.m_score.ToString();
+        m_scoreText.text = "You did : " + ScoreManager.m_instance.m_score.ToString() + " in " + m_timeExperience.ToString() + " seconds !";
+        StartCoroutine(BackToStartScene());
     }
 
     IEnumerator TimerLive()
@@ -51,5 +59,11 @@ public class TimeLeft : MonoBehaviour
         {
             StartCoroutine(TimerLive());
         }
+    }
+
+    IEnumerator BackToStartScene()
+    {
+        yield return new WaitForSeconds(10);
+        SceneManager.LoadScene(m_nameScene);
     }
 }
