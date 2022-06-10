@@ -10,7 +10,8 @@ Lancer le projet sur votre casque.
 
 Utilisation :
 
-Se déplacer : JoyStick de la manette gauche
+Déplacer le Character : JoyStick de la manette gauche
+Tourner la caméra : JoyStick de la manette droite
 Cliquer sur les boutons et les sliders : Laser dirigé avec la manette droite
 Grab un objet : Le bouton sur le côté de n'importe quelle manette
 
